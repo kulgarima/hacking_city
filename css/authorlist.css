@@ -1,0 +1,299 @@
+/*---- CAROUSEL ----*/
+
+.carousel-indicators-numbers li{
+      text-indent: 0;
+      margin: 0 2px;
+      width: 30px;
+      height: 30px;
+      border: none;
+      border-radius: 100%;
+      line-height: 30px;
+      color: rgba(8,89,43,0.7);
+      background-color: transparent;
+      transition: all 0.10s ease;
+      &.active,&:hover {
+        margin: 0 2px;
+        width: 30px;
+        height: 30px;
+        background-color: #337ab7;  
+      }
+    }
+
+
+.carousel-indicators-numbers li.active{
+     margin: 0 2px;
+        width: 30px;
+        height: 30px; 
+    background-color: transparent;
+    color: rgb(255,255,255);
+    
+}
+.carousel-caption{
+    width: 60%;
+    text-align: left;
+    left: 10%;
+    bottom: 20%;
+  color: #f1f1f1;
+}
+
+.black-masking{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1,14,35,0.4);
+}
+/*------------------------*/
+
+/*---navbar of blog-----*/
+
+.navbar-item:hover{
+    color: green;
+}
+
+.fa-search:hover{
+  color: green;
+}
+
+input{
+    border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid green;
+}
+
+/*----------*/
+.next-page{
+    color: green; font-size: 17px; cursor: pointer;
+}
+
+
+/* --- MEDIA QUERIES ---*/
+
+@media only screen and (max-width: 768px){
+   .carousel-caption{
+        width: 70%;
+        text-align:center;
+        bottom: 10%;
+         top: 5%;
+        margin-left: 30px;
+        
+    }
+    .display-4{
+        font-size: 40px;
+        line-height: normal;
+    }
+    
+    .hsize{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .h2{
+        font-size: 25px;
+        line-height: normal;
+    }
+    
+     .overlay1{
+        padding-top: 1rem;
+    }
+    
+    .featured{
+        display: block;
+                height: 70px;
+        padding: 20px 0px 10px 20px;
+        background-color: white;
+        width: 7rem;
+
+    }
+    .carousel-label{
+        margin-bottom: 4rem;
+         background-color: rgb(54, 160, 58);
+         height: 70px;
+    }
+    
+    .card-text{
+        bottom: 20%;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    
+    #author-img{
+        height: 75px; width: 75px;
+    }
+    
+    d4{
+    font-weight: bold; 
+        font-size: 10px;
+    }
+    d5{
+        font-size: 15px;
+    }
+    
+    .author-name{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .about-author{
+        margin-bottom: 3rem; 
+        font-size: 15px;
+    }
+}
+
+ 
+@media only screen and (min-width: 768px){
+.carousel{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+    
+    .h2{
+        font-size: 40px;
+        line-height: 1.5;
+    }
+   
+     .hsize{
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .row_margin{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .overlay1{
+        padding-left: 40px;
+        padding-right: 80px;
+        padding-top: 3rem;
+    }
+    
+    .card-title{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    
+    .carousel-label{
+        background-color: rgb(54, 160, 58);
+        height: 70px;
+        margin-bottom: 4rem; margin-left: 0rem; margin-right: 0rem;
+    }
+    .featured{
+        color: black;
+        height: 70px;
+        padding: 20px 0px 10px 20px;
+        background-color: white;
+        width: 10rem;
+       
+    }
+    
+    .card-text{
+        bottom: 40%;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    d4{
+    font-weight: bold; font-size: 30px;
+    }
+    
+    d5{
+        margin-bottom: 3rem;  font-size: 20px;
+    }
+    
+     #author-img{
+        height: 100px; width: 100px;
+    }
+    .author-name{
+        font-weight: bold; 
+        font-size: 30px;
+    }
+    
+    .about-author{
+        margin-bottom: 3rem; 
+        font-size: 18px;
+    }
+    
+}
+/*--------------------------------*/
+.carousel-control-next{
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    width: 1%;
+    color: black;
+    text-align: left;
+    opacity: 0.9;
+    margin-right: 75rem;
+}
+ .carousel-control-prev {
+    position: absolute;
+    top: 90%;
+    bottom: 0;
+    width: 1%;
+    color: black;
+    text-align: right;
+    opacity: 0.9;
+      margin-left: 15rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.white{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7,94,21,0.9);
+}
+a:hover{
+    color: aliceblue;
+}
+
+
+
+/* ---- CARD BEFORE HOVER ----*/
+.hello{
+    display: block;
+}
+
+
+.lol{
+    display: none;
+}
+
+/*------------------------*/
+ /*---- CARD ON HOVER ----*/
+
+card:hover{
+    border-radius: 5px;
+    border: 2px solid black;
+    
+}
+
+.card:hover .hello{
+    display: none;
+}
+.card:hover .lol{
+    display: block;
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+.card:hover .black{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.card:hover .category-link{
+    display: none;
+    color: greenyellow;
+}
+
+/*-------------------------*/
